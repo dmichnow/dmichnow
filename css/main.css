@@ -264,7 +264,6 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 2rem;
-  padding: 0 2rem;
 }
 
 .about .items__item {
@@ -273,7 +272,7 @@
 }
 
 .about .items__item h2, .about .items__item h3 {
-  margin: 0.5rem 0;
+  margin: 0.5rem 2rem;
   color: #bdcabd;
 }
 
@@ -284,6 +283,7 @@
 .about .items__item p {
   line-height: 3rem;
   text-align: justify;
+  padding: 0 2rem;
 }
 
 .about .items ul {
@@ -292,8 +292,9 @@
 }
 
 .about .items ul li {
-  height: 25px;
-  padding: 0 20px;
+  padding: 0 1.4rem;
+  margin: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .about .items ul li:last-child {
@@ -348,32 +349,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .menu-btn {
-    visibility: hidden;
-  }
-  .nav {
-    visibility: visible;
-  }
-  .nav .menu-nav {
-    display: block;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    height: 100%;
-    background: transparent;
-    text-align: right;
-  }
-  .nav .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-  }
-  .nav .menu-nav__link {
-    font-size: 1rem;
-  }
   .about .items {
     width: 80vw;
   }
   .about .items p {
-    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  .about .items h2 {
+    margin: 0.5rem 0;
   }
   .about .profile {
     float: right;
@@ -412,6 +395,27 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1rem;
+  }
   .projects__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
